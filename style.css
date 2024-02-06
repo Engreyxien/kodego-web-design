@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #0b3954;
+}
+
+h1 {
+  color: #9d5691;
+  font-size: 32px;
+}
+h3 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 28px;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #f0f0f0;
+  margin: 0 0.5rem;
+  position: relative;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.1rem;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #fffffa;
+  z-index: 2;
+}
+.navbar a:hover::before {
+  transform: scaleX(1);
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #9d5691;
+  color: #f0f0f0;
+  border-radius: 5px;
+}
+.button-paragraph {
+  padding: 16px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #9d5691;
+  color: #f0f0f0;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+}
+
+section {
+  padding: 1rem;
+}
+section#home {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #eaebf0;
+  color: #221d23;
+}
+section#home p {
+  max-width: 600px;
+}
+#home {
+  position: relative;
+}
+.flower {
+  position: absolute;
+  height: 500px;
+  z-index: 1;
+  right: 0;
+}
+.vector {
+  position: absolute;
+  height: 700px;
+  right: 0;
+  z-index: 0;
+}
+
+section#about {
+  text-align: center;
+  background-color: #eaebf0;
+  color: #221d23;
+}
+section#services {
+  height: 700px;
+  text-align: center;
+}
+section#about p {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+section#about img {
+  height: 400px;
+}
+section#services img {
+  display: flex;
+  height: 400px;
+  width: 300px;
+}
+section#services {
+  background-color: #368f8b;
+  z-index: -2;
+}
+section#services h3 {
+  color: #fffffa;
+}
+
+section#contact {
+  text-align: center;
+}
+section#contact input,
+section#contact textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+section#contact input[type="submit"] {
+  background-color: #912f40;
+  border: 0;
+  color: #fffffa;
+  cursor: pointer;
+}
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
